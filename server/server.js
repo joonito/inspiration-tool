@@ -6,7 +6,7 @@ import cors from 'cors'
 const app = express()
 const configuration = new Configuration({
   organization: 'org-okgExYnQrnqCkHDYyS9LCE0Y',
-  apiKey: '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',
+  apiKey: '[API_KEY]',
 })
 const openai = new OpenAIApi(configuration)
 
@@ -39,7 +39,7 @@ app.post('/', async (req, res) => {
       headers: {
         'Content-Type': 'application/json',
         Authorization:
-          'Bearer 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',
+          'Bearer [API_KEY]',
       },
     },
   )
@@ -64,7 +64,7 @@ app.post('/', async (req, res) => {
         headers: {
           'Content-Type': 'application/json',
           Authorization:
-          'Bearer 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',
+          'Bearer [API_KEY]',
         },
       },
     )
